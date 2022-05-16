@@ -1,0 +1,93 @@
+<!-- Possible names
+Retronetic
+ -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>PixelMart</title>
+		<link rel="icon" href="PIXELMART ICON.png">
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+
+	<body>
+		<!-- taken from the report website we made -->
+		<div class="navbar">
+			<div class="icon"><a href="#"><img src="PIXELMART.png" id="navbarlogo"></a></div>
+			<a href="#"><img src="cart.jpg" class="cart"></a>
+			<a href="shop01.html">Shop</a>
+			<a href="about.html">About</a>
+			<a href="index.html">Home</a>
+
+
+
+		</div>
+
+		<!-- overlays the 3D images on top of each other, along with text and button -->
+		<section>
+			<img src="Ground.png" id="Ground">
+			<!-- <img src="GameBox.png" id="GameBox"> -->
+			<img src="AM01.png" id="AM01">
+			<img src="AM02.png" id="AM02">
+			<img src="AM03.png" id="AM03">
+			<img src="AM04.png" id="AM04">
+			<h2 id="Logo">Summer Sale</h2>
+			<img src="PIXELMART.png" id="bigLogo">
+			<a href="shop01.html" id = "button">Shop Now</a>
+			<img src="down-arrow.png" id="arrow">
+			<img src="AM05.png" id="AM05">
+			<img src="AM06.png" id="AM06">
+		</section>
+
+		<div class="sec">
+			<h2>Contact Us . . .</h2>
+			<p>	
+				<a href="https://www.gmail.com"><img src="gmailIcon.jpg" id="gmailIcon">pixelmart@gmail.com</a><br>
+				<a href="https://www.twitter.com"><img src="twitterIcon.png" id="twitterIcon">@pixelmart</a><br>
+				<a href="https://www.discord.com"><img src="discordIcon.png" id="discordIcon"> pixelmart#3645</a>
+				<!-- <img src="arcadeMachineIsolate.png" id="arcade"> -->
+
+				
+			</p>
+		</div>
+
+
+
+		<!-- Used this: https://www.youtube.com/watch?v=1wfeqDyMUx4&t=570s&ab_channel=OnlineTutorials -->
+		<!-- script to create paralax effect -->
+		<script type="text/javascript">
+			let Ground = document.getElementById('Ground')
+			let AM01 = document.getElementById('AM01')
+			let AM02 = document.getElementById('AM02')
+			let AM03 = document.getElementById('AM03')
+			let AM04 = document.getElementById('AM04')
+			let AM05 = document.getElementById('AM05')
+			let AM06 = document.getElementById('AM06')
+			let Logo = document.getElementById('Logo')
+			let Button = document.getElementById('button')
+			let Arrow = document.getElementById('arrow')
+			let BigLogo = document.getElementById('bigLogo')
+
+
+			window.addEventListener("scroll", function(){
+				let value = window.scrollY;
+				Ground.style.top = value * 1.1 + "px";
+				AM01.style.top = value * 1.2 + "px";
+				AM02.style.top = value * 1.24 + "px";	
+				AM03.style.top = value * 1.29 + "px";	
+				AM04.style.top = value * 1.35 + "px";	
+				AM05.style.top = value * 1.42 + "px";	
+				AM06.style.top = value * 1.5 + "px";
+				Logo.style.marginRight = value * 5 + "px";		
+				Logo.style.marginTop = value * 2.5 + "px";
+				Button.style.marginTop = value * 3 + "px";	
+				Arrow.style.marginTop = value * 1 + "px";	
+				BigLogo.style.marginTop = value * 1.5 + "px";	
+
+			})
+		</script>
+
+	</body>
+</html>

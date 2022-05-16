@@ -1,0 +1,93 @@
+<!-- Possible names
+Retronetic
+ -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>PixelMart</title>
+		<link rel="icon" href="PIXELMART ICON.png">
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+
+	<body>
+		<!-- taken from the report website we made -->
+		<div class="navbar">
+			<div class="icon"><a href="#"><img src="PIXELMART.png" id="navbarlogo"></a></div>
+			<a href="#"><img src="cart.jpg" class="cart"></a>
+			<a href="shop01.html">Shop</a>
+			<a href="about.html">About</a>
+			<a href="index.html">Home</a>
+
+
+
+		</div>
+
+		<!-- overlays the 3D images on top of each other, along with text and button -->
+		<section id="about">
+
+			
+			<!-- <img src="GameBox.png" id="GameBox"> -->
+			<img src="BU01.png" id="AM01">
+			<img src="BU02.png" id="AM02">
+			<img src="BU03.png" id="AM03">
+			<img src="BU04.png" id="AM04">
+			<img src="down-arrow.png" id="arrow">
+			<h3>About Us</h3>
+			<img src="BU05.png" id="AM05">
+			<img src="BU06.png" id="AM06">
+		</section>
+
+		<div class="sec2">
+			<h2>About Us . . .</h2>
+			<p>	
+				For those among us that are sick of the repetitive modern game formula.
+				Take a step back in time and reminisce on the golden era of gaming.	
+				<br><br>
+				We are an e-commerce retailer for vintage video games. 
+				We prioritise rapid shipping to ensure that you get your games as quick as possible.
+				Feel free to contact us with any queries through our various social platforms.
+			</p>
+			<img src="arcadeMachineIsolate.png" id="arcade">
+		</div>
+
+
+
+		<!-- Used this: https://www.youtube.com/watch?v=1wfeqDyMUx4&t=570s&ab_channel=OnlineTutorials -->
+		<!-- script to create paralax effect -->
+		<script type="text/javascript">
+			
+			let AM01 = document.getElementById('AM01')
+			let AM02 = document.getElementById('AM02')
+			let AM03 = document.getElementById('AM03')
+			let AM04 = document.getElementById('AM04')
+			let AM05 = document.getElementById('AM05')
+			let AM06 = document.getElementById('AM06')
+			let Logo = document.getElementById('Logo')
+			let Button = document.getElementById('button')
+			let Arrow = document.getElementById('arrow')
+			let BigLogo = document.getElementById('bigLogo')
+
+
+			window.addEventListener("scroll", function(){
+				let value = window.scrollY;
+				
+				AM01.style.top = value * 1 + "px";
+				AM02.style.top = value * .95 + "px";	
+				AM03.style.top = value * 1.2 + "px";	
+				AM04.style.top = value * 1.25 + "px";	
+				AM05.style.top = value * 2 + "px";	
+				AM06.style.top = value * 2.1 + "px";
+					
+				// Logo.style.marginTop = value * 2.5 + "px";
+				// Button.style.marginTop = value * 3 + "px";	
+				// Arrow.style.marginTop = value * 1 + "px";	
+				// BigLogo.style.marginTop = value * 1.5 + "px";	\
+
+			})
+		</script>
+
+	</body>
+</html>

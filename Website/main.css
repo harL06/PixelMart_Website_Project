@@ -1,0 +1,729 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+{
+
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+
+body{
+	min-height: 100vh;
+	background: linear-gradient(#6A4C93, #1982C4);
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	font-family: 'DM Sans', sans-serif;
+}
+
+
+
+
+#button{
+	color: white;
+	background: #2D1E2F;
+	display: inline-block;
+	text-decoration: none;
+	padding: 8px 30px;
+	border-radius: 40px;
+	z-index: 10;
+
+	font-size: 1.5em;
+}
+
+#button:hover{
+	color: white;
+	padding: 9px 31px;
+	font-size: 1.55em;
+}
+
+#arrow{
+	position: absolute;
+	top: 70%;
+	width: 2%;
+	height: 4%;
+	object-fit: cover;
+	pointer-events: none;
+	z-index: 10;
+
+}
+
+
+
+/*section::before{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 250px;
+	background: linear-gradient(to top, #B8F3FF, transparent);
+	z-index: 10000;
+	pointer-events: none;
+
+}*/
+
+
+
+
+section{
+	position: relative;
+	width: 100%;
+	height: 120vh;
+	/*padding: 100px;*/
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#about{
+	position: relative;
+	width: 100%;
+	height: 90vh;
+	padding-top: 100px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+section img:not(#arrow):not(#bigLogo){
+/*	mix-blend-mode: screen;*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	pointer-events: none;
+
+}
+
+section h3{
+	pointer-events: none;
+	top: 300px;
+	color: white;
+	background-color: #2D1E2F;
+	/*font-family: 'Press Start 2P', cursive;*/
+	padding: 15px 25px;
+	border-radius: 40px;
+
+	position: absolute;
+
+	white-space: nowrap;
+	font-size: 3vw;
+}
+
+#Logo{
+	pointer-events: none;
+	font-family: 'Press Start 2P', cursive;
+	color: #F79824;
+
+	position: absolute;
+	right: -1200px;
+	white-space: nowrap;
+	font-size: 7.5vw;
+	/*font-size: 1.5em;*/
+}
+
+#bigLogo{
+	width: 400px;
+	position: absolute;
+	pointer-events: none;
+	top: 200px;
+}
+
+
+
+#btn
+{
+	
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px 30px;
+	border-radius: 40px;
+	background: navy;
+	color: white;
+	font-size: 1.5em;
+	transform: translateY(20px);
+	z-index: 3;
+
+}
+
+.sec
+ {
+	position: relative;
+	padding: 100px;
+	color: white;
+	background: #2D1E2F;
+	font-size: 25px;
+	word-spacing: 3px;
+	font-weight: lighter;
+
+
+	
+}
+
+.sec2
+ {
+	position: relative;
+	padding: 100px;
+	color: white;
+	background: #2D1E2F;
+	font-size: 25px;
+	
+	font-weight: lighter;
+	height: 71vh;
+
+
+
+	
+}
+
+.sec a:not(.img){
+	text-decoration: none;
+	color: #2D1E2F;
+	padding: 15px 15px;
+	margin: 20px 0px;
+	background-color: white;
+	display: inline-block;
+	border-radius: 15px;
+	font-weight: bold;
+	box-shadow: 0 10px 10px -6px black;
+	vertical-align: middle;
+	width: 350px;
+	white-space: nowrap;
+	min-width: 30%;
+
+}
+
+.sec a:hover{
+	box-shadow: 0 10px 10px -.2px black;
+	opacity: 90%;
+
+}
+
+.sec img{
+	width: 60px;
+	padding-right: 15px;
+	vertical-align: middle;
+
+}
+
+#arcade{
+	width: 40vw;
+	max-width: 600px;
+	white-space: nowrap;
+	
+	display: inline;
+	float: right;
+}
+																					
+@media only screen and (max-width: 1100px) { 
+  #arcade { 																		
+    display: none; 
+  } 
+}
+
+.sec br{
+	display: none;
+}
+
+.sec2 p{
+	display: inline-block;
+	max-width: 40vw;
+}
+
+
+
+
+/*	----------------------
+
+		NAV BAR
+
+	---------------------- */
+
+
+
+
+.navbar{
+	background-color: #2D1E2F;
+	overflow: hidden;
+	padding: 1px;
+	box-shadow: 0 10px 10px -10px black;
+	vertical-align: middle;
+}
+
+#navbarlogo{
+	width: 7vw;
+	pointer-events: none;
+}
+
+.icon{
+	float: left;
+	pointer-events: none;
+	
+
+}
+
+
+
+
+
+.navbar a{
+	float: right;
+	display: block;
+	border-radius: 25px;
+	color: white;
+	font-size: 1.2em;
+	margin: 0px 3px;
+	text-decoration: none;
+	padding: 15px 20px;
+	text-align: center;
+	margin-top: 5px;
+	vertical-align: middle;
+
+
+}
+
+
+
+/*styles the hover on navbar*/
+.navbar a:hover{
+	background-color: #B8F3FF;
+	color: #2D1E2F;
+}
+
+.cart{
+	width: 28px;
+	margin: 0px;
+	padding: 0px 0px;
+}
+
+
+
+
+
+
+/*	----------------------
+
+		Category
+
+	---------------------- */
+
+
+
+
+.category{
+	background-color: #2D1E2F;
+	overflow: hidden;
+	height: 160vh;
+	display: inline-block;
+	width: 15%;
+	text-align: center;
+	float: left;
+}
+
+
+
+
+.category a{
+	/*float: left;*/
+	display: block;
+	border-radius: 25px;
+	color: white;
+	font-size: 1.2em;
+	margin: 5px 8px;
+	text-decoration: none;
+	padding: 10px 15px;
+	
+
+}
+
+.selected a{
+	background-color: #B8F3FF;
+	pointer-events: none;
+	color: #2D1E2F;
+	text-align: center;
+}
+
+
+
+.category a:hover{
+	background-color: #B8F3FF;
+	color: #2D1E2F;
+}
+
+.category h3{
+	color: white;
+	font-size: 1.5em;
+	padding: 10px;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+
+/*	----------------------
+
+		SHOPPING SCREEN	
+
+	---------------------- */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: white;
+  /*max-width: 300px;*/
+  margin: 40px 40px;
+  text-align: center;
+  height: 600px;
+  float: left;
+  border-radius: 30px;
+  width: 380px;
+  
+
+}
+
+.cardContent {
+	
+	display: inline-block;
+
+
+}
+
+.cardClick {
+	padding: 10px 30px;
+	color: #2D1E2F;
+	display: inline-block;
+	text-decoration: none;
+
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+  text-align: center;
+
+
+}
+
+/*.card button {
+  color: white;
+	background: #6A4C93;
+	display: inline-block;
+	text-decoration: none;
+	padding: 8px 30px;
+	border-radius: 40px;
+	z-index: 10;
+	width:  100%;
+	outline: 0;
+	font-size: 1.5em;
+
+border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 30px;
+}
+*/
+/*.card button:hover {
+  background: #8768B1;
+  box-shadow: 0 10px 10px -10px black;
+	
+}*/
+
+/*	----------------------
+
+		SSpinny boxes - These are all just duplicates with like 1 thing changes, there's a much better way of doing it but i don't have enough time to change it now and this works perfectly
+
+	---------------------- */
+
+
+.hoverGif {
+	width: 300px;
+	height: 300px;
+	background-image: url(staticBox.png);
+	background-size: cover;
+	cursor: pointer;
+	border-radius: 30px;
+	box-shadow: 0 10px 20px -10px black;
+	margin: 15px 5px;
+
+	display: inline-block;
+}
+
+.hoverGif:hover{
+	background-image: url(spinBox.gif);
+	box-shadow: 0 10px 20px -8px black;
+}
+
+.hoverGif02 {
+	width: 300px;
+	height: 300px;
+	background-image: url(staticBox2.png);
+	background-size: cover;
+	cursor: pointer;
+	border-radius: 30px;
+	box-shadow: 0 10px 20px -10px black;
+	margin: 15px 5px;
+
+	display: inline-block;
+}
+
+.hoverGif02:hover{
+	background-image: url(spinBox2.gif);
+	box-shadow: 0 10px 20px -8px black;
+}
+
+.hoverGif03 {
+	width: 300px;
+	height: 300px;
+	background-image: url(staticBox3.png);
+	background-size: cover;
+	cursor: pointer;
+	border-radius: 30px;
+	box-shadow: 0 10px 20px -10px black;
+	margin: 15px 5px;
+
+	display: inline-block;
+}
+
+.hoverGif03:hover{
+	background-image: url(spinBox3.gif);
+	box-shadow: 0 10px 20px -8px black;
+}
+
+.hoverGif04 {
+	width: 300px;
+	height: 300px;
+	background-image: url(staticBox4.png);
+	background-size: cover;
+	cursor: pointer;
+	border-radius: 30px;
+	box-shadow: 0 10px 20px -10px black;
+	margin: 15px 5px;
+
+	display: inline-block;
+}
+
+.hoverGif04:hover{
+	background-image: url(spinBox4.gif);
+	box-shadow: 0 10px 20px -8px black;
+}
+
+.hoverGif05 {
+	width: 300px;
+	height: 300px;
+	background-image: url(staticBox5.png);
+	background-size: cover;
+	cursor: pointer;
+	border-radius: 30px;
+	box-shadow: 0 10px 20px -10px black;
+	margin: 15px 5px;
+
+	display: inline-block;
+}
+
+.hoverGif05:hover{
+	background-image: url(spinBox5.gif);
+	box-shadow: 0 10px 20px -8px black;
+}
+
+.hoverGif06 {
+	width: 300px;
+	height: 300px;
+	background-image: url(staticBox6.png);
+	background-size: cover;
+	cursor: pointer;
+	border-radius: 30px;
+	box-shadow: 0 10px 20px -10px black;
+	margin: 15px 5px;
+
+	display: inline-block;
+}
+
+.hoverGif06:hover{
+	background-image: url(spinBox6.gif);
+	box-shadow: 0 10px 20px -8px black;
+}
+
+.hoverGif07 {
+	width: 300px;
+	height: 300px;
+	background-image: url(staticBox7.png);
+	background-size: cover;
+	cursor: pointer;
+	border-radius: 30px;
+	box-shadow: 0 10px 20px -10px black;
+	margin: 15px 5px;
+
+	display: inline-block;
+}
+
+.hoverGif07:hover{
+	background-image: url(spinBox7.gif);
+	box-shadow: 0 10px 20px -8px black;
+}
+
+.hoverGif08 {
+	width: 300px;
+	height: 300px;
+	background-image: url(staticBox8.png);
+	background-size: cover;
+	cursor: pointer;
+	border-radius: 30px;
+	box-shadow: 0 10px 20px -10px black;
+	margin: 15px 5px;
+
+	display: inline-block;
+}
+
+.hoverGif08:hover{
+	background-image: url(spinBox8.gif);
+	box-shadow: 0 10px 20px -8px black;
+}
+
+.hoverGif09 {
+	width: 300px;
+	height: 300px;
+	background-image: url(staticBox9.png);
+	background-size: cover;
+	cursor: pointer;
+	border-radius: 30px;
+	box-shadow: 0 10px 20px -10px black;
+	margin: 15px 5px;
+	/*float: left;*/
+	display: inline-block;
+}
+
+.hoverGif09:hover{
+	background-image: url(spinBox9.gif);
+	box-shadow: 0 10px 20px -8px black;
+}
+
+
+/*	----------------------
+
+		Product Pages
+
+	---------------------- */
+
+	/*	Used this:  ;https://designmodo.com/create-product-page/	*/
+
+.product {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 15px;
+  display: flex;
+  background-color: white;
+  height: 80vh;
+  border-radius: 40px;
+}
+
+.left-column {
+  width: 65%;
+  position: relative;
+}
+ 
+.right-column {
+  width: 35%;
+  margin-top: 60px;
+}
+
+/* Left Column */
+.left-column iframe {
+  width: 80%;
+  height: 50%;
+  position: absolute;
+  left: 5%;
+  top: 0px;
+  top: 20px;
+  border-radius: 20px;
+
+}
+
+/* Left Column */
+.left-column img {
+	display: inline-block;
+  position: relative;
+  width: 40%;
+  top: 410px;
+  border-radius: 20px;
+  left: 40px;
+
+}
+
+/* Product Description */
+.product-description {
+  border-bottom: 1px solid #E1E8EE;
+
+  margin-bottom: 20px;
+}
+.product-description span {
+  font-size: 12px;
+  color: #2D1E2F;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.product-description h1 {
+  
+  font-size: 52px;
+  color: #2D1E2F;
+  letter-spacing: -2px;
+}
+.product-description p {
+  font-size: 16px;
+  padding-top: 20px;
+  border-top: 1px solid #E1E8EE;
+  padding-right: 30px;
+  color: #2D1E2F;
+  line-height: 24px;
+}
+
+/* Product Price */
+.product-price {
+  display: flex;
+  align-items: center;
+}
+ 
+.product-price span {
+  font-size: 26px;
+  
+  color: #43474D;
+  margin-right: 20px;
+}
+ 
+.cart-btn {
+	display: block;
+	border-radius: 25px;
+	background: #2D1E2F;
+	color: white;
+	font-size: 1.2em;
+	margin: 0px 3px;
+	text-decoration: none;
+	padding: 15px 20px;
+	text-align: center;
+	margin-top: 5px;
+
+}
+.cart-btn:hover {
+  box-shadow: 0 10px 10px -10px black;
+}
+
