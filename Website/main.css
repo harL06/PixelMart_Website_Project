@@ -1,7 +1,12 @@
+/*	Imports fonts	*/
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+
+
+/*	All stuff for home page and some of the about us page	*/
 {
 
 	scroll-behavior: smooth;
@@ -99,7 +104,7 @@ section{
 
 
 section img:not(#arrow):not(#bigLogo){
-/*	mix-blend-mode: screen;*/
+
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -229,7 +234,9 @@ section h3{
 	display: inline;
 	float: right;
 }
-																					
+
+/*	Arcade machine on about us page dissapears if screen isnt wide enough*/
+
 @media only screen and (max-width: 1100px) { 
   #arcade { 																		
     display: none; 
